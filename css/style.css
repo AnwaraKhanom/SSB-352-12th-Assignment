@@ -1,0 +1,338 @@
+body{
+    margin:0;	
+    padding:0;	
+}
+h1,h2,h3,h4,h5,h6,p,ul,li{
+    margin:0;	
+    padding:0;	
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #33417c;
+    font-size: 16px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+.navbar-light .navbar-nav .nav-link:hover{
+    color: #051931;   
+}
+
+.banner{
+    background-image: url(../img/banner.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.banner h1{
+
+color: #fff;
+
+text-transform: uppercase;
+
+font-size: 65px;
+}
+.hg{
+    align-items: center;
+    min-height: 90vh;
+}
+.icon{
+    color:#fff;
+    font-size: 35px;
+    position: absolute;
+    left: 50%;
+    top: 75%;
+    transform: translateX(-50%);
+    animation: updown 1s linear infinite;
+    animation-direction: alternate;
+
+}
+
+@keyframes updown{
+    0%{
+        top: 75%;
+    }
+    /* 25%{
+
+    } */
+    100%{
+        top: 80%;
+    }
+}
+
+.who_we_are{
+
+}
+.who_we_are span{
+    height: 5px;
+    width: 0px;
+    background: #E76128;
+    display: inline-block;
+    transition: .5s all ease-in-out;
+}
+.who_we_are h1{
+    color: #33417c;
+    font-size: 40px;
+}
+.who_we_are p{
+    color: #bab5b2;
+}
+.who_we_are:hover span{
+    width: 50px;
+}
+
+.what_we_do{
+    background-color: #fbfbfb;
+    background-image: url(../img/whatwedo_bg.png);
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: 1022px;
+}
+.heading{
+
+}
+.heading span{
+    height: 5px;
+    width: 0px;
+    background: #E76128;
+    display: block;
+    margin: auto;
+    transition: .5s all ease-in-out;
+}
+.heading h1{
+    color: #33417c;
+    font-size: 40px;  
+    text-align: center; 
+    text-transform: uppercase;
+}
+.what_we_do:hover .heading span{
+    width: 50px;
+}
+.image{
+    position: relative;
+}
+.image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0%;
+    left: 0;
+    bottom: 0;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,36226f+64,36226f+100&0+0,1+64 */
+    background: -moz-linear-gradient(top,  rgba(125,185,232,0) 0%, rgba(54,34,111,1) 64%, rgba(54,34,111,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(125,185,232,0) 0%,rgba(54,34,111,1) 64%,rgba(54,34,111,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(125,185,232,0) 0%,rgba(54,34,111,1) 64%,rgba(54,34,111,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#007db9e8', endColorstr='#36226f',GradientType=0 ); /* IE6-9 */
+
+
+
+    opacity: .5;
+    transition: .5s all ease-in-out;
+}
+.image:hover::before{
+    height: 100%;
+}
+.text{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+.text h1{
+    color: #fff;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.image:hover .text{
+    opacity: 1;
+    top: 50%;
+}
+.image_icon{
+    
+position: absolute;
+    
+left: 45%;
+    
+top: 80%;
+    
+color: #fff;
+    
+transform: translateX(-50%);
+    
+font-size: 30px;
+opacity: 0;
+transition: .5s all ease-in-out;
+}
+.image:hover .image_icon{
+    opacity: 1;
+    left: 50%;
+}
+.text1{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s all ease-in-out;
+}
+.text1 h1{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.image:hover .text1{
+    opacity: 1;
+    top: 50%;
+}
+
+.attorney_section{
+    background-image: url(../img/attorney_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+}
+.attorney_section span{
+    height: 5px;
+    width: 0px;
+    background: #E76128;
+    display: inline-block;
+    transition: .5s all ease-in-out;
+}
+.attorney_section h1{
+    color: #fff;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+.attorney_section p{
+    color: #a3a0cc;
+}
+.attorney_section a{
+    color: #e76128;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.attorney_section:hover span{
+    width: 50px;
+}
+.designation{
+    position: absolute;
+    left: 20%;
+    top: 80%;
+    color: #fff;
+    transition: .5s all ease-in-out;
+    opacity: 0;
+
+}
+.image:hover .designation{
+    top: 75%;
+    opacity: 1;
+}
+
+
+.language:hover .heading span{
+    width: 50px;
+}
+.language{
+
+}
+.language h2{
+    color: #36226f;
+    font-size: 25px;
+    text-transform: uppercase;
+}
+.language p{
+    color: #bab5b3;
+}
+.language a{
+    color: #e76128;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.contact{
+    background-color: #36226f;
+}
+.contact:hover .heading span{
+    width: 50px;
+}
+.contact .heading h1{
+    color: #fff;
+}
+form{
+
+}
+form input{
+    
+background: transparent !important;
+    
+border: none !important;
+    
+border-bottom: 1px solid #564a98 !important;
+    
+border-radius: 0 !important;
+    
+caret-color: #fff;
+}
+form input::placeholder{
+    color: #fff !important;
+}
+form textarea::placeholder{
+    color: #fff !important;
+}
+form input:focus{
+    box-shadow: none !important;
+}
+form textarea:focus{
+    box-shadow: none !important;
+}
+form textarea{caret-color: #;background: transparent !important;border: none !important;border-bottom: 1px solid #564a98 !important;caret-color: #fff;}
+form input[type="submit"]{
+
+background: #e76128 !important;
+
+color: #fff;
+
+padding: 10px 110px;
+
+border: 2px solid #e76128 !important;
+
+transition: .5s all ease-in-out;
+}
+form input[type="submit"]:hover{
+    background: transparent !important;
+}
+
+.footer{
+
+background-color: #16102b;
+}
+.footer p{
+    color: #6c64a0;
+}
+.social_icon{
+
+}
+.social_icon ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 38%;
+    margin: auto;
+    font-size: 20px;
+}
+.social_icon ul li{
+
+} 
+.social_icon ul li a{
+
+color: #c1bddb;
+}
+.social_icon ul li a i{
+
+}
+
